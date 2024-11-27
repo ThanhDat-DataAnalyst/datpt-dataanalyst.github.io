@@ -12,19 +12,36 @@
     <!-- Wrapper -->
     <div id="wrapper" class="fade-in">
 
-        <!-- Intro -->
-        <div id="intro">
-            <!-- Avatar Image -->
-            <div style="width: 200px; height: 200px; margin: 0 auto; border-radius: 50%; overflow: hidden; border: 5px solid #ccc;">
-                <img src="images/avatar.jpg" alt="Avatar" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <h1>Thanh-Dat Pham<br />
-            Portfolio</h1>
-            <p>Data Analyst well versed in SQL, Python, Power BI <a href="https://www.facebook.com/thanhdatpham.uit/">@Fresher Data Analyst</a></p>
-            <ul class="actions">
-                <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-            </ul>
-        </div>
+       <!-- Intro -->
+<div id="intro">
+    <!-- Avatar Image -->
+    <div style="
+        width: 250px; 
+        height: 250px; 
+        margin: 0 auto; 
+        border-radius: 50%; 
+        overflow: hidden;
+        border: 5px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        margin-bottom: 2rem;
+        background-color: #f5f5f5;">
+        <img src="images/avatar.png" 
+            alt="Avatar" 
+            style="
+                width: 100%; 
+                height: 100%; 
+                object-fit: cover;
+                object-position: center;
+                transform: scale(1.05);
+                transition: transform 0.3s ease;">
+    </div>
+    <h1>Thanh-Dat Pham<br />
+    Portfolio</h1>
+    <p>Data Analyst well versed in SQL, Python, Power BI <a href="https://www.facebook.com/thanhdatpham.uit/">@Fresher Data Analyst</a></p>
+    <ul class="actions">
+        <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+    </ul>
+ </div>
 
         <!-- Nav -->
         <nav id="nav">
@@ -40,30 +57,68 @@
         <!-- Main -->
         <div id="main">
 
-            <!-- Featured Post -->
             <article class="post featured">
                 <header class="major">
-                    <h2><a href="#">Data Cleaning<br />in SQL</a></h2>
-                    <p>In this project we take raw housing data and transform it in SQL Server to make it more usable for analysis.</p>
+                    <h2><a href="https://github.com/ThanhDat-DataAnalyst/Capstone-Projects/tree/main/1.%20Cafe%20Rewards%20Insights%20%26%20Analysis">Cafe Rewards Insights & Analysis in SQL</a></h2>
+                    <p class="project-description">
+                        Led end-to-end analytics project using SQL, Python and Power BI to optimize Maven Cafe's rewards program.
+                        Analyze Maven Cafe's rewards program performance, and customer behavior, and offer effectiveness through data-driven insights.
+                        Suggest a strategic approach to improve promotional campaigns in terms of: targeting key customer segments, enhancing offer relevance, and boosting customer engagement.
+                        <br><br>
+                        <span class="tech-stack">
+                            <span class="tech-badge">
+                                <i class="fas fa-database"></i> Advanced SQL
+                            </span>
+                            <span class="tech-badge">
+                                <i class="fab fa-python"></i> Python Analytics
+                            </span>
+                            <span class="tech-badge">
+                                <i class="fas fa-chart-bar"></i> Power BI
+                            </span>
+                        </span>
+                    </p>
                 </header>
-                <a href="https://github.com/AlexTheAnalyst/PortfolioProjects/blob/main/Data%20Cleaning%20Portfolio%20Project%20Queries.sql" class="image main"><img src="images/housing.jpg" alt="Housing Data Project" /></a>
+                <a href="https://github.com/ThanhDat-DataAnalyst/Capstone-Projects/tree/main/1.%20Cafe%20Rewards%20Insights%20%26%20Analysis" class="image main">
+                    <img src="images/cafe.jpg" alt="Cafe Rewards Insights & Analysis Project" />
+                </a>
                 <ul class="actions special">
-                    <li><a href="https://github.com/AlexTheAnalyst/PortfolioProjects/blob/main/Data%20Cleaning%20Portfolio%20Project%20Queries.sql" class="button large">View Project</a></li>
+                    <li><a href="https://github.com/ThanhDat-DataAnalyst/Capstone-Projects/tree/main/1.%20Cafe%20Rewards%20Insights%20%26%20Analysis" class="button large">View Project</a></li>
                 </ul>
             </article>
-
-            <!-- Posts -->
-            <section class="posts">
-                <article>
-                    <header>
-                        <h2><a href="#">COVID 19<br />Data Exploration</a></h2>
-                    </header>
-                    <a href="https://github.com/AlexTheAnalyst/PortfolioProjects/blob/main/COVID%20Portfolio%20Project%20-%20Data%20Exploration.sql" class="image fit"><img src="images/covid.jpg" alt="COVID Data Project" /></a>
-                    <p>In this project we use SQL Server to explore global COVID 19 data.</p>
-                    <ul class="actions special">
-                        <li><a href="https://github.com/AlexTheAnalyst/PortfolioProjects/blob/main/COVID%20Portfolio%20Project%20-%20Data%20Exploration.sql" class="button">View Project</a></li>
-                    </ul>
-                </article>
+            
+            <style>
+            .project-description {
+                text-align: left;
+                line-height: 1.6;
+                font-size: 1.1em;
+            }
+            
+            .tech-stack {
+                display: flex;
+                gap: 15px;
+                margin: 10px 0;
+                justify-content: center;
+            }
+            
+            .tech-badge {
+                padding: 8px 15px;
+                border-radius: 5px;
+                background: #2c3e50;
+                color: white;
+                font-size: 0.9em;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+            
+            .key-deliverables {
+                display: block;
+                margin-top: 15px;
+                font-size: 0.95em;
+                color: #666;
+                line-height: 1.8;
+            }
+            </style>
                 <article>
                     <header>
                         <h2><a href="#">Tableau Dashboards</a></h2>
