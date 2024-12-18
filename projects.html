@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Projects - Thanh-Dat Pham</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        .project-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 3rem;
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-header {
+            padding: 2rem;
+            background: rgba(78, 116, 255, 0.1);
+        }
+
+        .project-header h2 {
+            margin: 0;
+            color: #4e74ff;
+        }
+
+        .project-content {
+            padding: 2rem;
+        }
+
+        .project-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tech-badge {
+            background: rgba(78, 116, 255, 0.1);
+            color: #4e74ff;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .project-description {
+            margin: 1.5rem 0;
+            line-height: 1.6;
+        }
+
+        .project-link {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: #4e74ff;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-link:hover {
+            background: #3657cc;
+        }
+
+        .key-features {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 5px;
+        }
+
+        .key-features h4 {
+            color: #4e74ff;
+            margin-bottom: 1rem;
+        }
+
+        .key-features ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .key-features li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .key-features li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #4e74ff;
+        }
+    </style>
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Thanh-Dat Pham</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="index.html">About Me</a></li>
+                <li class="active"><a href="projects.html">Projects</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/tdp-uit" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/ThanhDat-DataAnalyst" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <!-- Project 1 -->
+            <article class="project-card">
+                <div class="project-header">
+                    <h2>Cafe Rewards Insights & Analysis</h2>
+                </div>
+                <img src="images/cafe.jpg" alt="Cafe Rewards Project" class="project-image">
+                <div class="project-content">
+                    <div class="project-description">
+                        Led end-to-end analytics project using SQL, Python and Power BI to optimize Maven Cafe's rewards program. Analyzed program performance, customer behavior, and offer effectiveness through data-driven insights.
+                    </div>
+                    <div class="key-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Analyzed Maven Cafe's rewards program performance</li>
+                            <li>Studied customer behavior patterns</li>
+                            <li>Evaluated offer effectiveness</li>
+                            <li>Provided strategic recommendations for promotional campaigns</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Advanced SQL</span>
+                        <span class="tech-badge">Python Analytics</span>
+                        <span class="tech-badge">Power BI</span>
+                    </div>
+                    <div style="margin-top: 2rem;">
+                        <a href="https://github.com/ThanhDat-DataAnalyst/Capstone-Projects/tree/main/1.%20Cafe%20Rewards%20Insights%20%26%20Analysis" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card">
+                <div class="project-header">
+                    <h2>Business Intelligence For Automobile Market</h2>
+                </div>
+                <img src="images/Car.jpg" alt="Automobile Market Project" class="project-image">
+                <div class="project-content">
+                    <div class="project-description">
+                        Developed and managed a comprehensive Data Warehouse in Microsoft SQL Server, implementing ETL processes and creating interactive dashboards for automobile market analysis.
+                    </div>
+                    <div class="key-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Data Warehouse development in Microsoft SQL Server</li>
+                            <li>ETL implementation using SSIS</li>
+                            <li>OLAP analysis with SSAS</li>
+                            <li>Interactive dashboards in Power BI</li>
+                            <li>Data mining for pattern recognition</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">SSIS</span>
+                        <span class="tech-badge">SSAS</span>
+                        <span class="tech-badge">Power BI</span>
+                        <span class="tech-badge">SQL Server</span>
+                    </div>
+                    <div style="margin-top: 2rem;">
+                        <a href="https://drive.google.com/file/d/1vpkSo6ANBE962LzujwUxUZC5rAF-LF_w/view" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section class="split contact">
+                <section>
+                    <h3>Location</h3>
+                    <p>Binh Thanh, TP. Hồ Chí Minh</p>
+                </section>
+                <section>
+                    <h3>Phone</h3>
+                    <p><a href="tel:0382906901">0382 906 901</a></p>
+                </section>
+                <section>
+                    <h3>Email</h3>
+                    <p><a href="mailto:datpt.isresearch@gmail.com">datpt.isresearch@gmail.com</a></p>
+                </section>
+                <section>
+                    <h3>Social</h3>
+                    <ul class="icons alt">
+                        <li><a href="https://www.linkedin.com/in/tdp-uit" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="https://github.com/ThanhDat-DataAnalyst" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

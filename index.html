@@ -1,10 +1,142 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Thanh-Dat Data</title>
+    <title>Thanh-Dat Pham - Data Analyst Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        .profile-stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+            gap: 1rem;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #4e74ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-section {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .profile-section h3 {
+            color: #4e74ff;
+            border-bottom: 2px solid rgba(78, 116, 255, 0.3);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .two-column-list {
+            columns: 2;
+            column-gap: 2rem;
+        }
+
+        .two-column-list li {
+            margin-bottom: 0.5rem;
+            break-inside: avoid;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 5px;
+        }
+
+        .contact-item i {
+            color: #4e74ff;
+        }
+
+        .education-highlight {
+            background: rgba(78, 116, 255, 0.1);
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 0.5rem 0;
+        }
+
+        .tech-badge {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            background: rgba(78, 116, 255, 0.1);
+            border-radius: 15px;
+            margin: 0.3rem;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+
+        .tech-badge:hover {
+            background: rgba(78, 116, 255, 0.2);
+        }
+
+        .experience-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-left: 4px solid #4e74ff;
+        }
+
+        .experience-card h4 {
+            color: #4e74ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-date {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9em;
+            margin-bottom: 1rem;
+        }
+
+        .publication-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-left: 4px solid #4e74ff;
+        }
+
+        .publication-card a {
+            color: #4e74ff;
+            text-decoration: none;
+        }
+
+        .publication-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
@@ -12,41 +144,20 @@
     <!-- Wrapper -->
     <div id="wrapper" class="fade-in">
 
-       <!-- Intro -->
-<div id="intro">
-    <!-- Avatar Image -->
-    <div style="
-        width: 250px; 
-        height: 250px; 
-        margin: 0 auto; 
-        border-radius: 50%; 
-        overflow: hidden;
-        border: 5px solid rgba(255, 255, 255, 0.3);
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        margin-bottom: 2rem;
-        background-color: #f5f5f5;">
-        <img src="images/avatar.png" 
-            alt="Avatar" 
-            style="
-                width: 100%; 
-                height: 100%; 
-                object-fit: cover;
-                object-position: center;
-                transform: scale(1.05);
-                transition: transform 0.3s ease;">
-    </div>
-    <h1>Thanh-Dat Pham<br />
-    Portfolio</h1>
-    <p>Data Analyst well versed in SQL, Python, Power BI <a href="https://www.facebook.com/thanhdatpham.uit/">@Fresher Data Analyst</a></p>
-    <ul class="actions">
-        <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-    </ul>
- </div>
+        <!-- Intro -->
+        <div id="intro">
+            <div style="width: 250px; height: 250px; margin: 0 auto; border-radius: 50%; overflow: hidden; border: 5px solid rgba(78, 116, 255, 0.3); box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); margin-bottom: 2rem;">
+                <img src="images/avatar.png" alt="Thanh-Dat Pham" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h1>Thanh-Dat Pham</h1>
+            <p>Data Analyst & Business Intelligence Developer</p>
+        </div>
 
         <!-- Nav -->
         <nav id="nav">
             <ul class="links">
-                <li class="active"><a href="index.html">Projects</a></li>
+                <li class="active"><a href="index.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
             </ul>
             <ul class="icons">
                 <li><a href="https://www.linkedin.com/in/tdp-uit" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -56,111 +167,155 @@
 
         <!-- Main -->
         <div id="main">
+            <!-- Stats -->
+            <section class="profile-stats">
+                <div class="stat-card">
+                    <div class="stat-number">&lt; 1</div>
+                    <div>Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2</div>
+                    <div>Publications</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3.7</div>
+                    <div>GPA / 4.0</div>
+                </div>
+            </section>
 
-            <article class="post featured">
-                <header class="major">
-                    <h2><a href="https://github.com/ThanhDat-DataAnalyst/Capstone-Projects/tree/main/1.%20Cafe%20Rewards%20Insights%20%26%20Analysis">Cafe Rewards Insights & Analysis in SQL</a></h2>
-                    <p class="project-description">
-                        Led end-to-end analytics project using SQL, Python and Power BI to optimize Maven Cafe's rewards program. <br> <br>
-                        Analyze Maven Cafe's rewards program performance, and customer behavior, and offer effectiveness through data-driven insights.<br> <br>
-                        Suggest a strategic approach to improve promotional campaigns in terms of: targeting key customer segments, enhancing offer relevance, and boosting customer engagement.<br> <br>
-                        <br><br>
-                        <span class="tech-stack">
-                            <span class="tech-badge">
-                                <i class="fas fa-database"></i> Advanced SQL
-                            </span>
-                            <span class="tech-badge">
-                                <i class="fab fa-python"></i> Python Analytics
-                            </span>
-                            <span class="tech-badge">
-                                <i class="fas fa-chart-bar"></i> Power BI
-                            </span>
-                        </span>
-                    </p>
-                </header>
-                <a href="https://github.com/ThanhDat-DataAnalyst/Capstone-Projects/tree/main/1.%20Cafe%20Rewards%20Insights%20%26%20Analysis" class="image main">
-                    <img src="images/cafe.jpg" alt="Cafe Rewards Insights & Analysis Project" />
-                </a>
-                <ul class="actions special">
-                    <li><a href="https://github.com/ThanhDat-DataAnalyst/Capstone-Projects/tree/main/1.%20Cafe%20Rewards%20Insights%20%26%20Analysis" class="button large">View Project</a></li>
-                </ul>
-            </article>
-            
-            <style>
-            .project-description {
-                text-align: left;
-                line-height: 1.3em;
-                font-size: 1.1em;
-            }
-            
-            .tech-stack {
-                display: flex;
-                gap: 15px;
-                margin: 10px 0;
-                justify-content: center;
-            }
-            
-            .tech-badge {
-                padding: 8px 15px;
-                border-radius: 5px;
-                background: #2c3e50;
-                color: white;
-                font-size: 0.9em;
-                display: flex;
-                align-items: center;
-                gap: 8px;
-            }
-            
-            .key-deliverables {
-                display: block;
-                margin-top: 15px;
-                font-size: 0.95em;
-                color: #666;
-                line-height: 1.8;
-            }
-            </style>
-                <article>
-                    <header>
-                        <h2><a href="https://drive.google.com/file/d/1vpkSo6ANBE962LzujwUxUZC5rAF-LF_w/view">Business Intelligence For Automobile Market 2024</a></h2>
-                    </header>
-                    <a href="https://drive.google.com/file/d/1vpkSo6ANBE962LzujwUxUZC5rAF-LF_w/view" class="image fit"><img src="images/Car.jpg" alt="Car Analysis Project" /></a>
-                    <p>Developed and managed a Data Warehouse in Microsoft SQL Server.<br> <br>
-                        Applied SSIS (SQL Server Integration Services) for ETL (Extract, Transform, Load) processes, and SSAS (SQL Server Analysis Services) for data modeling and OLAP analysis in Visual Studio.<br> <br>
-                        Conducted Data Analysis and Visualization using Power BI to create interactive dashboards.<br> <br>
-                        Utilized data mining techniques to cluster data and uncover patterns and trends in large datasets.<br> <br></p>
-                    <ul class="actions special">
-                        <li><a href="https://drive.google.com/file/d/1vpkSo6ANBE962LzujwUxUZC5rAF-LF_w/view" class="button">View Project</a></li>
+            <!-- Contact Information -->
+            <section class="profile-section">
+                <h3>Contact Information</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Binh Thanh, TP. Hồ Chí Minh</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>0382 906 901</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>datpt.isresearch@gmail.com</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <section class="profile-section">
+                <h3>Professional Experience</h3>
+                <div class="experience-card">
+                    <h4>Fresher Data Analyst (Contract) - Asia Commercial Bank (ACB)</h4>
+                    <div class="experience-date">Oct 2024 - Present</div>
+                    <ul>
+                        <li>Participated in the Data Application Enhancement Program at ACB</li>
+                        <li>Developed Python scripts for analysis and processing of transactional data</li>
+                        <li>Utilized PowerBI to create daily team progress reports</li>
+                        <li>Conducted data analysis for Business Units including:
+                            <ul>
+                                <li>Requirement gathering with Business Units</li>
+                                <li>SQL data processing for specific use cases</li>
+                                <li>Prioritizing cases based on business impact</li>
+                                <li>Creating comprehensive reports with actionable insights</li>
+                            </ul>
+                        </li>
                     </ul>
-                </article>
-                <article>
-                    <header>
-                        <h2><a href="#">Movie Correlation<br />with Python</a></h2>
-                    </header>
-                    <a href="github link here" class="image fit"><img src="images/movies.jpg" alt="Movie Correlation Project" /></a>
-                    <p>In this project we look at what variables affect the gross revenue of movies.</p>
-                    <ul class="actions special">
-                        <li><a href="github link here" class="button">View Project</a></li>
+                </div>
+                <div class="experience-card">
+                    <h4>BI Database Developer Intern - XSUNT Corporation</h4>
+                    <div class="experience-date">June 2024 - Sep 2024</div>
+                    <ul>
+                        <li>Created SQL queries for data updates across various time periods</li>
+                        <li>Developed SQL scripts for data column management</li>
+                        <li>Wrote technical documentation for business units</li>
                     </ul>
-                </article>
-                <article>
-                    <header>
-                        <h2><a href="#">Amazon Web Scraper<br />with Python</a></h2>
-                    </header>
-                    <a href="#" class="image fit"><img src="images/amazon2.jpg" alt="Amazon Web Scraper Project" /></a>
-                    <p>In this project we scrape data from Amazon to analyze price data for products.</p>
-                    <ul class="actions special">
-                        <li><a href="#" class="button">View Project</a></li>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section class="profile-section">
+                <h3>Education</h3>
+                <div class="education-highlight">
+                    <h4>University of Information Technology - Vietnam National University HCM City</h4>
+                    <p><strong>Major:</strong> Information Systems</p>
+                    <p><strong>Degree:</strong> Bachelor of Science with Honours</p>
+                    <p><strong>GPA:</strong> 3.7/4 | <strong>IELTS:</strong> 5.5</p>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <h4>Awards & Achievements:</h4>
+                    <ul>
+                        <li>UIT ADVANCE SCHOLARSHIP 2023 [Class B]</li>
+                        <li>Full Scholarship: 6/8 terms</li>
+                        <li>Partial Scholarship: 2/8 terms</li>
                     </ul>
-                </article>
+                </div>
+            </section>
+
+            <!-- Publications -->
+            <section class="profile-section">
+                <h3>Publications</h3>
+                <div class="publication-card">
+                    <h4>Research Paper:</h4>
+                    <a href="#">Real-Time and Robust Driver Drowsiness Detection Using Hybrid Deep Learning Models & Kolmogorov-Arnold Networks - 2024</a>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section class="profile-section">
+                <h3>Technical Skills</h3>
+                <div class="two-column-list">
+                    <ul>
+                        <li>Database & data warehouse</li>
+                        <li>SQL, PL/SQL, Python, R, C++</li>
+                        <li>BI Tools</li>
+                        <li>Statistical mindset</li>
+                        <li>Analytical mindset</li>
+                        <li>Machine learning & Deep learning</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Tech Stack -->
+            <section class="profile-section">
+                <h3>Tech Stack</h3>
+                <div>
+                    <div class="tech-badge">Apache Hive</div>
+                    <div class="tech-badge">Pyspark</div>
+                    <div class="tech-badge">Kafka</div>
+                    <div class="tech-badge">SSIS/SSAS</div>
+                    <div class="tech-badge">MongoDB</div>
+                    <div class="tech-badge">SQL Server</div>
+                    <div class="tech-badge">Firebase</div>
+                    <div class="tech-badge">DBeaver</div>
+                    <div class="tech-badge">Power BI</div>
+                    <div class="tech-badge">Excel</div>
+                    <div class="tech-badge">Google Sheet</div>
+                </div>
+            </section>
+
+            <!-- Soft Skills -->
+            <section class="profile-section">
+                <h3>Soft Skills</h3>
+                <div class="two-column-list">
+                    <ul>
+                        <li>Storytelling with data</li>
+                        <li>Teamwork</li>
+                        <li>Project management</li>
+                        <li>Stakeholder management</li>
+                        <li>Communication</li>
+                        <li>Presentation</li>
+                    </ul>
+                </div>
             </section>
         </div>
 
         <!-- Footer -->
         <footer id="footer">
             <section class="split contact">
-                <section class="alt">
-                    <h3>Address</h3>
-                    <p>Phường 11, Phan Văn Trị, Quận Bình Thạnh, TP. Hồ Chí Minh</p>
+                <section>
+                    <h3>Location</h3>
+                    <p>Binh Thanh, TP. Hồ Chí Minh</p>
                 </section>
                 <section>
                     <h3>Phone</h3>
@@ -173,18 +328,12 @@
                 <section>
                     <h3>Social</h3>
                     <ul class="icons alt">
-                        <li><a href="https://www.linkedin.com/in/tdp-uit" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                        <li><a href="https://github.com/ThanhDat-DataAnalyst" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/tdp-uit" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="https://github.com/ThanhDat-DataAnalyst" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
                     </ul>
                 </section>
             </section>
         </footer>
-
-        <!-- Copyright -->
-        <div id="copyright">
-            <ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-        </div>
-
     </div>
 
     <!-- Scripts -->
